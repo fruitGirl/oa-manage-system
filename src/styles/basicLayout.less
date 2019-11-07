@@ -1,0 +1,313 @@
+@import 'config.less';
+.root {
+    height: 100%;
+}
+.main {
+    flex: 1;
+    margin: 16px;
+}
+.layout-content-wrapper {
+    display: flex;
+    overflow: auto;
+}
+.layout-header {
+    background: #fff;
+    padding: 0;
+    border-bottom: 1px solid #e8e8e8;
+}
+.main-body {
+    padding: 24px;
+    background: #fff;
+}
+.layout {
+    height: 100%;
+}
+.sider-top {
+    width: 100%;
+    height: 64px;
+    line-height: 64px;
+    background: #002140;
+    padding: 0 8px;
+    .logo {
+        float: left;
+    }
+    .logo-name {
+        color: #fff;
+        font-size: 18px;
+        margin: 0 5px;
+        vertical-align: middle;
+    }
+
+    .anticon-menu-fold,
+    .anticon-menu-unfold {
+        color: #999;
+        font-size: 15px;
+        vertical-align: middle;
+        font-weight: bold;
+    }
+    .anticon-menu-fold {
+        margin-left: 20px;
+        margin-top: 3px;
+    }
+    .anticon-menu-unfold {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+}
+.layout-menu {
+    line-height: 62px;
+    padding-left: 15px;
+    border-bottom: none;
+    .ant-menu-item {
+        color: #333;
+    }
+}
+.ant-dropdown-menu-item {
+    .text-default {
+        color: #333;
+    }
+}
+.nav_right {
+    float: right;
+    margin-right: 10px;
+    height: 56px;
+
+    .home-link {
+        position: relative;
+        top: -1px;
+        display: inline-block;
+        padding: 0 6px;
+        margin-right: 13px;
+        color: #333;
+        border-bottom: 2px solid transparent;
+        font-size: 14px;
+        cursor: pointer;
+        &.selected {
+            border-bottom: 2px solid #1890ff;
+        }
+    }
+
+    .login_name {
+        color: #666;
+        font-size: 14px;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .exit_link {
+        color: #fff;
+        font-size: 14px;
+        margin-right: 20px;
+        text-decoration: none;
+    }
+    .exit_btn {
+        width: 20px;
+        height: 20px;
+        // background: url('@{imgpath}/exit_btn.png') no-repeat;
+    } //头像部分样式
+    .login_headerImg {
+        width: 30px;
+        height: 30px;
+        color: #fff;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        margin-right: 5px;
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px 0px;
+    }
+    i {
+        position: relative;
+        font-size: 24px;
+        color: #fff;
+        span {
+            position: absolute;
+            top: -2px;
+            right: -13px;
+            width: 25px;
+            height: 12px;
+            text-align: center;
+            line-height: 12px;
+            font-size: 12px;
+            background: #ff4343;
+            border-radius: 6px;
+        }
+    }
+    .mail-badge {
+        top: -10px;
+        right: 10px;
+    }
+}
+
+.ant-dropdown {
+    top: 57px !important;
+    position: fixed;
+}
+
+//通知消息
+.message_box {
+    position: relative;
+    margin-right: 28px;
+    .message_icon {
+        display: inline-block;
+        width: 25px;
+        height: 20px;
+        vertical-align: middle;
+        background-image: url('@{imgpath}/message_icon.png');
+        background-size: 24px auto;
+        background-repeat: no-repeat;
+        background-position: 0 2px;
+        &:hover {
+            background-image: url('@{imgpath}/message_active_icon.jpg');
+        }
+    }
+    .mail_icon {
+        font-size: 24px;
+        vertical-align: middle;
+        color: #999;
+        //消息hover上去的样式
+        &:hover {
+            color: #2298ef;
+            cursor: pointer;
+        }
+    }
+}
+
+//消息的样式
+.message {
+    display: inline-block;
+    position: absolute;
+    top: 13px;
+    right: -16px;
+    min-width: 27px;
+    height: 14px;
+    border-radius: 10px;
+    background: red;
+    color: #fff;
+    text-align: center;
+    line-height: 13px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.singular_message {
+    right: -8px;
+    min-width: 16px;
+    padding-left: 2px;
+}
+
+//下拉框的消息提示的样式
+.message_text {
+    color: @defaultColor;
+    font-size: 13px;
+    margin-left: 10px;
+    margin-right: 24px;
+}
+//hover上去显示的样式
+.manager_hover,
+.limits_manage_hover,
+.set_manage_hover,
+.token_manage_hover,
+.list_manage_hover,
+.examine_icon_hover,
+.workflow_hover,
+.personnel_hover {
+    display: none;
+}
+.ant-menu-submenu-active {
+    .manager,
+    .limits_manage,
+    .set_manage,
+    .token_manage,
+    .list_manage,
+    .examine_icon,
+    .workflow,
+    .personnel {
+        display: none;
+    }
+    .manager_hover,
+    .limits_manage_hover,
+    .set_manage_hover,
+    .token_manage_hover,
+    .list_manage_hover,
+    .examine_icon_hover,
+    .workflow_hover,
+    .personnel_hover {
+        display: inline-block;
+    }
+}
+.ant-menu-submenu {
+    .anticon {
+        vertical-align: -0.25rem;
+    }
+}
+// 发起申请按钮
+.send_apply {
+    display: inline-block;
+    color: #fff;
+    background: #08355f;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 16px;
+    margin-left: 12px;
+    border-radius: 3px;
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+    > i {
+        margin-top: -5px;
+        margin-right: 5px;
+    }
+}
+// 收起侧边栏之后 发起申请按钮变小
+.change_send {
+    width: 34px;
+    margin-left: 22px;
+    padding-left: 5px;
+}
+
+// 搜索框
+.header-search {
+    display: inline-block;
+    padding-right: 18px;
+    i {
+        font-size: 16px;
+        cursor: pointer;
+        color: rgba(0,0,0,.65);
+        vertical-align: middle;
+    }
+    .input {
+      display: inline-block;
+      width: 0;
+      background: transparent;
+      border-radius: 0;
+      transition: width 0.3s, margin-left 0.3s;
+      input {
+        padding-right: 0;
+        padding-left: 0;
+        border: 0;
+        box-shadow: none !important;
+        outline: none;
+        border: none;
+        border-radius: 0;
+        &:focus {
+            border-bottom: 1px solid #999;
+        }
+      }
+      &,
+      &:hover {
+        border: none;
+      }
+      &.show {
+        width: 220px;
+        margin-left: 8px;
+      }
+    }
+    .search-icon {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background: url('@{imgpath}/search.png') no-repeat center center;
+    }
+}

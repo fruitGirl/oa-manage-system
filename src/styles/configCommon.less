@@ -1,0 +1,86 @@
+@import 'config.less';
+
+.ant-form-inline .ant-form-item {
+    margin-right: 50px;
+}
+.antd_form_horizontal .ant-form-item-label label {
+    margin-right: 0;
+}
+.oa-btn {
+    width: 100px;
+    margin-right: 24px;
+}
+//表格中的字体居中
+.table-center {
+    text-align: center !important;
+}
+//表格中的字体靠左
+.table-left {
+    text-align: left !important;
+}
+//表格中的字体靠右
+.table-right {
+    text-align: right !important;
+}
+
+.modify-span {
+    color: @aColor;
+    cursor: pointer;
+}
+//普通字体的颜色
+.text-color {
+    color: @text-color;
+    cursor: pointer;
+}
+//被操作后亮的颜色
+.operated-color {
+    color: @watting-color;
+    cursor: pointer;
+}
+.formLable {
+    .ant-form-item-required {
+        &:before {
+            content: '';
+        }
+    }
+}
+.creat_from_modify {
+    padding: 0px;
+}
+.ant-btn {
+    min-width: 0;
+}
+
+.backfill-color {
+    color: #999;
+}
+.ant-modal-body {
+    padding-bottom: 5px;
+}
+.mrR15 {
+    margin-right: 15px;
+}
+.form-inline {
+    .form-btn-group {
+        margin-left: 121px;
+        .file-btn {
+            width: 122px;
+        }
+        .ant-upload-list {
+            display: none;
+        }
+    }
+}
+.ant-btn > .anticon + span,
+.ant-btn > span + .anticon {
+    margin-left: 0;
+}
+.apply_name {
+    padding-left: 52px !important;
+}
+
+@media screen and (width: 1300px) {
+    .ant-form-inline .ant-form-item {
+        margin-right: 4px;
+    }
+}

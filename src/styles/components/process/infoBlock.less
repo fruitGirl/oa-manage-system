@@ -1,0 +1,49 @@
+@import './processCommon.less';
+.info-block-box {
+  font-size: 13px;
+  .row-box {
+    margin-bottom: 10px;
+  }
+  .info-main {
+    height: 35px;
+    background-color: #F7F7F7;
+    line-height: 35px;
+    padding: 0 20px;
+    color: #333;
+  }
+  .divide {
+    padding-right: 40px;
+  }
+  .left-box {
+    display: flex
+  }
+  .text-ellipsis-show {
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    vertical-align: top;
+  }
+  .name-block {
+    max-width: 200px;
+    .text-ellipsis-show()
+  }
+  .name-title {
+    flex: 1;
+    display: inline-block;
+    overflow: hidden;
+    white-space:nowrap;
+  }
+  .content-show {
+    max-width: 89%;
+    .text-ellipsis-show()
+
+  }
+  .note-box {
+    height: 35px;
+  }
+}
+.tooltip-box{
+  max-width: 400px;
+}
+

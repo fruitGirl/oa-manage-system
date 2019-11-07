@@ -1,0 +1,49 @@
+.department-rank {
+    border: 1px solid #dde2e9;
+}
+.header {
+    padding: 12px 20px;
+    border-bottom: 1px solid #dde2e9;
+}
+.scroll {
+    height: 300px;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 1px;
+    }
+    &::-webkit-scrollbar-thumb {
+        height: 50px;
+        border-radius: 10px;
+        background: #bcbcbc;
+    }
+    &::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background: #fff;
+    }
+}
+.rank-content-wrapper {
+    .title {
+        padding: 10px 30px 0;
+        color: #c4c4c4;
+    }
+    .detail-link {
+        display: none;
+    }
+    li {
+        color: #999;
+        padding: 5px 30px;
+        &:hover {
+            background: #ebf5ff;
+            .detail-link {
+                display: block;
+            }
+        }
+    }
+}
+.department-rank-tit {
+    font-weight: bold;
+}
+
+
+

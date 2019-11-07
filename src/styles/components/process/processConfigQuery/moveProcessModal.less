@@ -1,0 +1,56 @@
+.classification-item {
+    height: 36px;
+    line-height: 36px;
+    padding: 0 10px;
+    background:#fff;
+    &:hover {
+        background: #DEEFFF;
+    }
+    &.checked {
+        background: rgba(24, 144, 255, 0.28);
+    }
+}
+
+.process-move-title {
+    font-weight: bold;
+}
+
+.process-move-tip {
+    font-size: 14px;
+}
+
+.move-process-modal {
+    .ant-modal-body {
+        max-height: 424px;
+        overflow: auto;
+        &::-webkit-scrollbar {
+            width: 7px;
+            height: 4px;
+            background-color: #fff;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #ccc;
+        }
+        &::-webkit-scrollbar-track {
+            border-radius: 10px;
+            background-color: #fff;
+        }
+    }
+}
+
+.cur-position {
+    display: inline-block;
+    height:25px;
+    padding: 0 5px;
+    line-height: 25px;
+    margin-left: 15px;
+    background:#EEE;
+    border-radius:4px;
+    font-size: 12px;
+}
+
+.checked-icon {
+    padding-top: 10px;
+    color: #1890FF;
+}

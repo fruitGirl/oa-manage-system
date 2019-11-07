@@ -1,0 +1,30 @@
+.leader {
+    padding: 2px 5px;
+    background: #e6f7ff;
+    border: 1px solid #91d5ff;
+    border-radius: 3px;
+}
+.list-header {
+    padding: 5px 0;
+    background: #fafafa;
+    font-weight: bold;
+}
+.list-content {
+    max-height: 200px;
+    margin-right: -6px;
+    padding-bottom: 15px;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 1px;
+    }
+    &::-webkit-scrollbar-thumb {
+        height: 50px;
+        border-radius: 10px;
+        background: #bcbcbc;
+    }
+    &::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background: #fff;
+    }
+}

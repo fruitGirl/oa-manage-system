@@ -1,0 +1,121 @@
+@import 'performanceCreate.less';
+@import '../config.less';
+
+.box_default_background_color,
+.performance-total {
+    .ant-form-item {
+        margin: 0 20px;
+        padding: 10px 0;
+    }
+}
+
+.box_default_background_color {
+    padding-top: 0;
+    padding-bottom: 10px;
+
+    .line {
+        border-bottom: 1px dashed #aab8cf;
+    }
+    .form-item-inline {
+        width: 315px;
+        display: inline-block;
+        .ant-form-item-label,
+        .ant-form-item-control-wrapper {
+            display: inline-block;
+        }
+        .ant-form-item-control-wrapper {
+            width: 200px;
+        }
+    }
+    .multiline-text {
+        padding: 14px 0;
+        .ant-form-item-label,
+        .ant-form-item-control {
+            line-height: 24px;
+        }
+    }
+}
+.performance-result {
+    .inline {
+        display: inline-block;
+        width: 110px;
+    }
+    label {
+        margin-right: 10px;
+    }
+}
+.performance-total {
+    .ant-form-item-label {
+        width: 110px;
+        label {
+            margin-right: 10px;
+        }
+    }
+}
+.text-tip {
+    position: absolute;
+    top: 20px;
+    left: 300px;
+    margin-left: 15px;
+    font-size: 12px;
+    color: #999;
+}
+.text-result {
+    font-size: 16px;
+    color: #ff2727;
+}
+// 结果
+.performance-result-box {
+    width: 362px;
+    height: 110px;
+    padding: 16px 19px;
+    border-radius: 60px;
+    background-color: #fff4f4;
+    p {
+        margin: 0;
+    }
+}
+.result-score-wrap {
+    float: left;
+    width: 134px;
+    height: 74px;
+    padding: 6px 0;
+    background: url('../@{imgpath}/result-score-bg.png') no-repeat;
+    text-align: center;
+
+    .result-tip {
+        color: #fff;
+        line-height: 22px;
+        padding-left: 22px;
+    }
+    .result-score {
+        color: #ff2727;
+        font-size: 24px;
+        line-height: 44px;
+    }
+}
+.result-info {
+    float: left;
+    margin-left: 14px;
+    margin-top: 10px;
+    color: #999;
+    line-height: 28px;
+}
+
+.main {
+    margin: 0;
+}
+
+.main-body {
+    padding: 0;
+    background-color: transparent;
+}
+
+.content-wrapper {
+    padding: 24px;
+    margin: 16px 20px;
+    background: #fff;
+    .ant-steps-dot .ant-steps-item-content {
+        width: 120px;
+    }
+}

@@ -1,0 +1,235 @@
+.main-content-wrap {
+    background: #fff;
+}
+.cp-list-wrap {
+    &.sub-department-list-container {
+        width: 340px;
+        .sub-department-container {
+                width: 340px;
+        }
+    }
+    padding-top: 20px;
+    margin-left: 20px;
+    padding-bottom: 20px;
+    width: 280px;
+    display: inline-block;
+    margin-right: 15px;
+    // &:last-child{
+    //   margin-right: 20px;
+    // }
+    .cp-add {
+        float: right;
+    }
+
+    .cp-list {
+        width: 280px;
+        height: 500px;
+        border: 1px solid #e4e4e4;
+        border-radius: 4px;
+        overflow: auto;
+        position: relative;
+        .no-data {
+            text-align: center;
+            padding-top: 165px;
+            min-height: 350px;
+        }
+        .no-data-addshow {
+            padding-top: 60px;
+            min-height: 280px;
+        }
+        .list-title {
+            margin: 20px 20px 10px;
+        }
+        .add-form-area {
+            text-align: center;
+            margin-bottom: 20px;
+            .form-area {
+                margin-top: 10px;
+            }
+            .no-data-additem {
+                margin-top: 60px;
+            }
+        }
+        // .ant-tree {
+        //   min-height: 330px;
+        // }
+        // .department-wrap{
+        //   min-height: 330px;
+        // }
+    }
+
+    .ant-tree {
+        padding-left: 15px;
+    }
+    .cp-list-head {
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+    .title {
+        display: inline-block;
+        margin: 0;
+    }
+    .current-department {
+        padding-left: 20px;
+        .input {
+            width: 260px;
+            margin-right: 10px;
+            height: 38px;
+            line-height: 38px;
+            display: inline-block;
+            padding: 0 11px;
+            border: 1px solid #d9d9d9;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #999;
+            vertical-align: middle;
+            .deparate-name {
+                width: 145px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .manager {
+                overflow: hidden;
+                width: 90px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+        i {
+            vertical-align: middle;
+        }
+    }
+    .department-list {
+        padding-left: 60px;
+        .input {
+            width: 220px;
+            margin-right: 10px;
+            height: 38px;
+            line-height: 38px;
+            display: inline-block;
+            padding: 0 11px;
+            border: 1px solid #d9d9d9;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #999;
+            vertical-align: middle;
+            .deparate-name {
+                width: 100px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .manager {
+                overflow: hidden;
+                width: 90px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+        i {
+            vertical-align: middle;
+        }
+    }
+    .department-li {
+        display: inline-block;
+        line-height: 38px;
+        height: 38px;
+        position: relative;
+        margin-bottom: 20px;
+        &:before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: -35px;
+            width: 25px;
+            height: 25px;
+            border-style: none none dashed dashed;
+            border-width: 1px;
+            border-color: #ddd;
+        }
+    }
+}
+.edit-company-modal {
+    .title {
+        display: inline-block;
+        width: 100%;
+        background: #ddd;
+        padding: 0 10px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .add-btn {
+        float: right;
+    }
+    .ant-modal-body {
+        padding-top: 0px;
+    }
+    .ant-form {
+        margin-top: 15px;
+    }
+    .company-list {
+        margin-top: 10px;
+    }
+    .edit-btn {
+        margin-right: 20px;
+    }
+    .list-li {
+        display: inline-block;
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        .text {
+            display: inline-block;
+            width: 82%;
+            padding-left: 20px;
+        }
+    }
+    .no-data {
+        display: inline-block;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+    .footer {
+        margin-top: 10px;
+        text-align: center;
+    }
+    .footer-btn {
+        margin-right: 20px;
+    }
+    .footer-btn + .footer-btn + .footer-btn {
+        margin-right: 0;
+    }
+}
+.ant-tree {
+    font-size: 14px;
+}
+.ant-form-item {
+    margin-bottom: 16px;
+}
+.text-center {
+    text-align: center;
+}
+:root .ant-tree.ant-tree-show-line li span.ant-tree-switcher.ant-tree-switcher_close:after {
+    font-size: 16px;
+}
+:root .ant-tree.ant-tree-show-line li span.ant-tree-switcher.ant-tree-switcher-noop:after {
+    font-size: 16px;
+}
+:root .ant-tree.ant-tree-show-line li span.ant-tree-switcher.ant-tree-switcher_open:after {
+    font-size: 16px;
+}
+
+@media screen and (min-width: 1500px) {
+    .cp-list-wrap {
+        width: 340px;
+        margin-right: 40px;
+        .cp-list {
+            width: 340px;
+        }
+    }
+}
+
+

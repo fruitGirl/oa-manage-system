@@ -1,0 +1,59 @@
+@import '../configCommon.less';
+@import '../config.less';
+.main-body {
+    padding: 0;
+    background-color: transparent;
+}
+.setMsg {
+    text-align: center;
+    background: url('../@{imgpath}/warming_icon.png') no-repeat 40px;
+    font-size: 14px;
+    color: #333;
+    span {
+        color: #74beff;
+    }
+}
+.authority {
+    background: url('../@{imgpath}/warming_icon.png') no-repeat 90px;
+}
+.setOk,
+.newPwsMsg {
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+.ant-confirm-content {
+    margin-left: 0px !important;
+    text-align: center;
+}
+
+.newPwsNum {
+    color: red;
+    font-weight: bold;
+}
+
+// 一人多岗
+.parttime-post-modal {
+    .ant-modal-body {
+        padding: 0;
+        max-height: 420px;
+        overflow: auto;
+    }
+    .box_default_background_color {
+        padding: 5px;
+        margin-bottom: 8px;
+    }
+    .input_width {
+        width: 158px;
+    }
+    .ant-form-item {
+        margin-bottom: 5px;
+    }
+    .loading {
+        text-align: center;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        padding: 30px 50px;
+        margin: 20px 0;
+    }
+}

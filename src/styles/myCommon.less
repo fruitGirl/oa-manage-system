@@ -1,0 +1,493 @@
+@import 'config.less';
+.main {
+    margin: 0;
+}
+.main-body {
+    padding: 0;
+    background: transparent;
+    min-height: 360px;
+}
+.slide_modal {
+    position: absolute;
+    top: 58px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        width: 5px;
+        background-color: #f5f5f5;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #ccc;
+    }
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        background-color: #f5f5f5;
+    }
+}
+.ant-modal-close-x {
+    display: block;
+    font-style: normal;
+    vertical-align: baseline;
+    text-align: center;
+    text-transform: none;
+    text-rendering: auto;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+}
+
+.i_block {
+    display: inline-block;
+}
+.block {
+    display: block;
+}
+.v_middle {
+    vertical-align: middle;
+}
+.mt17 {
+    margin-top: 15px;
+}
+.main-content-wrap {
+    margin: 0 15px;
+}
+.my_nav {
+    margin-top: 0;
+}
+.content {
+    margin: 15px;
+
+    .ant-pagination {
+        margin: 10px 30px 10px 0;
+    }
+}
+.my_content_box {
+    padding: 10px 25px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    &:hover {
+        box-shadow: 0px 4px 8px 1px #c3c3c3;
+        cursor: pointer;
+    }
+}
+//审批经办原因
+.content_reason {
+    width: 24%;
+    //头像的样式
+    .content_img {
+        width: 50px;
+        height: 50px;
+        color: #fff;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+    }
+    //原因
+    .content_text {
+        margin-left: 10px;
+    }
+}
+//审批经办人
+.content_nikcname {
+    text-align: center;
+}
+
+//不同意、撤回字体颜色
+.disagree_color {
+    color: @disagree-color;
+}
+//待审批字体颜色
+.watting_color {
+    color: @watting-color;
+}
+//同意字体颜色
+.agree_color {
+    color: @agree-color;
+}
+//不同意、撤回背景颜色
+.disagree_bg {
+    background: @disagree-color;
+}
+//待审批的头像背景颜色
+.watting_bg {
+    background: @watting-color;
+}
+//同意背景颜色
+.agree_bg {
+    background: @agree-color;
+}
+.text_color {
+    color: @text-color;
+}
+//待审批的整条背景色
+.wait_bg {
+    background-color: #ffffcc;
+}
+//点击是出现的边框
+.click_active {
+    border: 2px solid #2299ee;
+}
+//头部样式
+.detials_header {
+    height: 38px;
+    padding: 5px 20px 0 20px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #d8d8d8;
+
+    .oa_small_btn {
+        height: 25px;
+        min-width: 60px;
+        margin: 0 3px;
+        border: 1px solid #d8d8d8;
+        background-color: #fff;
+    }
+    i {
+        float: right;
+        color: #adadad;
+        font-size: 20px;
+        margin-top: 5px;
+    }
+}
+//审批流程样式
+.approval_process {
+    border-top: 1px solid #f5f5f5;
+    padding-top: 10px;
+    padding-left: 22px;
+    margin-bottom: 25px;
+    > p {
+        line-height: 35px;
+        margin-left: -7px;
+    }
+}
+//我的发起的侧滑框的样式
+.mySend {
+    border-top: none;
+    border-bottom: 1px solid #f5f5f5;
+    padding-left: 22px;
+    padding-bottom: 10px;
+    margin-top: -25px;
+}
+.particulars {
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: 49px;
+
+    .icons {
+        width: 16px;
+        height: 16px;
+        margin-top: 9px;
+    }
+    //同意的图标样式
+    .agree_icon {
+        background: url('@{imgpath}/agree_icon.png') no-repeat;
+    }
+    //不同意的图标样式
+    .disagree_icon {
+        background: url('@{imgpath}/disagree_icon.png') no-repeat;
+    }
+    //等待的图标样式
+    .waitting_icon {
+        background: url('@{imgpath}/waitting_icon.png') no-repeat;
+    }
+    //审批完成
+    .finish_icon {
+        background: url('@{imgpath}/finish_icon.png') no-repeat;
+    }
+}
+.tooltip_box {
+    // width: calc(46vw - 200px);
+    height: 35px;
+    line-height: 35px;
+    background: #f5f5f5;
+
+    > .tooltip_i {
+        position: absolute;
+        top: 40%;
+        left: -6px;
+        border-right: 7px solid #f5f5f5;
+        border-top: 4px solid transparent;
+        border-bottom: 4px solid transparent;
+    }
+    .nickName {
+        width: 22%;
+        padding-left: 20px;
+    }
+}
+.img_box {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    img {
+        width: 80px;
+        height: 80px;
+    }
+}
+//不同意按钮
+.ant_btn_disagree {
+    background-color: @disagree-color;
+    border-color: @disagree-color;
+}
+.ant-form-item {
+    margin-bottom: 10px !important;
+}
+
+//模态框样式(客放全局)
+.oa_modal {
+    .ant-modal-body {
+        padding-bottom: 0;
+    }
+    .ant-modal-footer,
+    .ant-modal-header {
+        border-top: none;
+    }
+    .ant-modal-content {
+        border-radius: 0;
+    }
+}
+.sure_box {
+    margin-left: 20px;
+    margin-top: 10px;
+    .sure_icon {
+        width: 34px;
+        height: 34px;
+        background: url('@{imgpath}/order-close.png') no-repeat;
+    }
+    .sure_text {
+        font-size: 15px;
+        font-weight: bolder;
+        margin-left: 10px;
+    }
+}
+.modal_styel {
+    position: fixed;
+    top: 56px;
+    bottom: 0;
+    right: 0;
+    // width: calc(53vw - 205px);
+    width: 800px;
+    // height: calc(100vh - 56px);
+    background-color: #fff;
+    z-index: 10;
+    box-shadow: 1px 1px 12px 1px #999;
+    > form {
+        padding: 45px 30px 30px 30px;
+    }
+    .ant-form-item-label label {
+        color: @text-color;
+        margin-right: 27px;
+    }
+    .ant-form-item-label {
+        width: 14%;
+    }
+    .antd_form_horizontal .ant-col-sm-offset-2 {
+        margin-left: 98px;
+    }
+}
+.time {
+    width: 21%;
+    text-align: right;
+}
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+//数据加载的样式
+.ant-spin {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 165px;
+    color: #999;
+    .ant-spin-dot i {
+        background-color: #999;
+    }
+}
+//动画
+.slide_right {
+    animation: myMoveRight 1s;
+    -moz-animation: myMoveRight 1s;
+    -webkit-animation: myMoveRight 1s;
+    -o-animation: myMoveRight 1s;
+}
+@keyframes myMoveRight {
+    from {
+        right: -813px;
+    }
+    to {
+        right: 0;
+    }
+}
+
+@-webkit-keyframes myMoveRight {
+    from {
+        right: -813px;
+    }
+    to {
+        right: 0;
+    }
+}
+.slide_left {
+    animation: myMoveLeft 1s;
+    -moz-animation: myMoveLeft 1s;
+    -webkit-animation: myMoveLeft 1s;
+    -o-animation: myMoveLeft 1s;
+}
+@keyframes myMoveLeft {
+    from {
+        right: 0;
+    }
+    to {
+        right: -813px;
+    }
+}
+
+@-webkit-keyframes myMoveLeft {
+    from {
+        right: 0;
+    }
+    to {
+        right: -813px;
+    }
+}
+//备注的样式
+.mark_textare {
+    margin-left: 0;
+    margin-top: 32px;
+}
+.title {
+    font-size: 16px;
+    padding: 30px 15px 0 28px;
+    background: #fff;
+    font-weight: bold;
+    margin: 0;
+}
+
+//差旅费
+.travle_fare_form {
+    z-index: -1;
+    .reason_p {
+        line-height: 20px;
+    }
+    .ant-form-item-label {
+        width: 98px;
+    }
+    //被招待人单位的样式
+    .buse_work > .ant-form-item-label {
+        width: 121px;
+        margin-left: -22px;
+    }
+    ul {
+        padding: 10px 0 0 20px;
+        li {
+            float: left;
+            width: 50%;
+        }
+    }
+    .upload_attachment {
+        padding: 10px 0 0 20px;
+        .load_content {
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+    .travel_fare_row {
+        width: 10%;
+        margin-left: 23px;
+        color: #999;
+    }
+    .download_icon {
+        width: 26px;
+        height: 16px;
+        background: url('@{imgpath}/upload_icon.png') no-repeat;
+    }
+    .upload_box {
+        padding-left: 20px;
+        border-bottom: 1px solid #fff;
+    }
+    .upload_attachment_buttom {
+        padding: 10px 0 10px 20px;
+    }
+    .particulars {
+        padding-left: 20px;
+        border-bottom: none;
+    }
+    .btn_text {
+        color: @aColor;
+        width: 45px;
+        text-align: center;
+        cursor: pointer;
+        vertical-align: middle;
+    }
+    a {
+        color: #333;
+    }
+    .ant-input-group {
+        padding-left: 14px;
+    }
+    .row {
+        width: 11.5%;
+        margin-left: -32px;
+        color: #999;
+        margin-right: 32px;
+        text-align: right;
+    }
+    .diff {
+        margin-left: -29px;
+        margin-right: 44px;
+    }
+}
+//备注的样式
+.remark_cls {
+    label {
+        margin-right: 25px !important;
+    }
+}
+//tooltip的样式 暂时去掉2019-9-18
+// .ant-tooltip-placement-topLeft .ant-tooltip-arrow {
+//     border-top-color: #fff;
+// }
+// .ant-tooltip-inner {
+//     color: #666;
+//     background-color: #fff;
+//     box-shadow: 0 1px 6px #999;
+// }
+
+//下拉框的大小
+.ant-dropdown-menu-item-li {
+    padding: 7px 18px;
+}
+.no-data {
+    text-align: center;
+    margin-top: 100px;
+}
+@media screen and (width: 1300px) {
+    .modal_styel {
+        width: calc(60vw - -38px);
+    }
+}
+.icon_wave {
+    margin: 5px 5px 0 5px;
+}
+
+.pagination-right {
+    text-align: right;
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+
+
+//   ---- 流程共同样式----
+.no-data-box {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;;
+  }

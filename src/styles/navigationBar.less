@@ -1,0 +1,180 @@
+@import 'config.less';
+
+.ant-dropdown-menu-item {
+    .text-default {
+        color: #333;
+    }
+}
+.nav_right {
+    float: right;
+    margin-right: 10px;
+    height: 56px;
+
+    .login_name {
+        color: #666;
+        font-size: 14px;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .exit_link {
+        color: #fff;
+        font-size: 14px;
+        margin-right: 20px;
+        text-decoration: none;
+    }
+    .exit_btn {
+        width: 20px;
+        height: 20px;
+        // background: url('@{imgpath}/exit_btn.png') no-repeat;
+    } //头像部分样式
+    .login_headerImg {
+        width: 30px;
+        height: 30px;
+        color: #fff;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        margin-right: 5px;
+        background: pink;
+    }
+    i {
+        position: relative;
+        font-size: 24px;
+        color: #fff;
+        margin-right: 30px;
+        span {
+            position: absolute;
+            top: -2px;
+            right: -13px;
+            width: 25px;
+            height: 12px;
+            text-align: center;
+            line-height: 12px;
+            font-size: 12px;
+            background: #ff4343;
+            border-radius: 6px;
+        }
+    }
+}
+
+.ant-dropdown {
+    top: 57px !important;
+    position: fixed;
+}
+
+//通知消息
+.message_box {
+    position: relative;
+    margin-right: 28px;
+    .message_icon {
+        width: 25px;
+        height: 20px;
+        vertical-align: middle;
+        background: url('@{imgpath}/message_icon.png') no-repeat;
+    }
+    .mail_icon {
+        font-size: 24px;
+        vertical-align: middle;
+        color: #999;
+        //消息hover上去的样式
+        &:hover {
+            color: #2298ef;
+            cursor: pointer;
+        }
+    }
+}
+
+//消息的样式
+.message {
+    display: inline-block;
+    position: absolute;
+    top: 13px;
+    right: -16px;
+    min-width: 27px;
+    height: 14px;
+    border-radius: 10px;
+    background: red;
+    color: #fff;
+    text-align: center;
+    line-height: 13px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.singular_message {
+    right: -8px;
+    min-width: 16px;
+    padding-left: 2px;
+}
+
+//下拉框的消息提示的样式
+.message_text {
+    color: @defaultColor;
+    font-size: 13px;
+    margin-left: 10px;
+    margin-right: 24px;
+}
+
+.send_apply {
+    display: inline-block;
+    color: #fff;
+    background: #08355f;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 16px;
+    margin-left: 12px;
+    border-radius: 3px;
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+    > i {
+        margin-top: -5px;
+        margin-right: 5px;
+    }
+}
+.change_send {
+    width: 34px;
+    margin-left: 22px;
+    padding-left: 5px;
+}
+
+//hover上去显示的样式
+.manager_hover,
+.limits_manage_hover,
+.set_manage_hover,
+.token_manage_hover,
+.list_manage_hover,
+.examine_icon_hover,
+.workflow_hover,
+.personnel_hover {
+    display: none;
+}
+.ant-menu-submenu-active {
+    .manager,
+    .limits_manage,
+    .set_manage,
+    .token_manage,
+    .list_manage,
+    .examine_icon,
+    .workflow,
+    .personnel {
+        display: none;
+    }
+    .manager_hover,
+    .limits_manage_hover,
+    .set_manage_hover,
+    .token_manage_hover,
+    .list_manage_hover,
+    .examine_icon_hover,
+    .workflow_hover,
+    .personnel_hover {
+        display: inline-block;
+    }
+}
+.ant-menu-submenu {
+    .anticon {
+        vertical-align: -0.25rem;
+    }
+}

@@ -1,0 +1,71 @@
+.reserve-pane {
+    padding: 25px 29px;
+    background: #fff;
+    .title {
+        padding-bottom: 20px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .item-wraper {
+        padding-bottom: 25px;
+    }
+    .item {
+        position: relative;
+        height: 32px;
+        border: 1px solid #e3e3e8;
+        border-left: none;
+        width: 2.17%;
+        &:nth-child(1) {
+            border-left: 1px solid #e3e3e8;
+            border-radius: 16px 0 0 16px;
+        }
+        &:last-child {
+            border-radius: 0 16px 16px 0;
+            .mark {
+                position: absolute;
+                right: 0;
+                left: auto;
+                bottom: -22px;
+            }
+        }
+        .mark {
+            position: absolute;
+            display: inline-block;
+            left: -5px;
+            bottom: -22px;
+        }
+        &.end-status {
+            background: #ededee;
+        }
+        &.cur-hover-status {
+            background: #98cafc;
+        }
+        &.cur-selected-status {
+            background: #188cff;
+        }
+        &.expire-status {
+            background: #ededee;
+        }
+        &.self-even-status {
+            background: #5fadfb;
+        }
+        &.other-even-status {
+            background: #ffc596;
+        }
+    }
+}
+.tooltip-card {
+    .usage {
+        font-size: 12px;
+    }
+    .ant-tooltip-arrow {
+        border-top-color: #fff;
+    }
+    .ant-tooltip-inner {
+        background: #fff;
+        color: #9a9898;
+    }
+    .ant-tooltip-arrow::before {
+        background-color: #fff;
+    }
+}

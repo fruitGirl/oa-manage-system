@@ -1,0 +1,41 @@
+@import '../processCommon.less';
+.approval-process-box {
+  .row-box{
+    margin-bottom: 10px;
+  }
+  .info-main {
+    height: 35px;
+    background-color: #F7F7F7;
+    line-height: 35px;
+    padding: 0 20px;
+    color: #333;
+  }
+  .row-right {
+    text-align: right;
+  }
+  .left-box {
+    display: flex
+  }
+  .text-ellipsis-show {
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    vertical-align: top;
+  }
+  .name-block {
+    max-width: 250px;
+    .text-ellipsis-show()
+  }
+  .name-title {
+    flex: 1;
+    display: inline-block;
+    overflow: hidden;
+    white-space:nowrap;
+  }
+  .content-show {
+    max-width: 89%;
+    .text-ellipsis-show()
+
+  }
+}

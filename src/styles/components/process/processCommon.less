@@ -1,0 +1,44 @@
+@imgpath : '../../../img/appImg';
+@red1: #FF6C6C;
+//同意的图标样式
+.agree_icon {
+  background: url('@{imgpath}/agree_icon.png') no-repeat;
+}
+//不同意的图标样式
+.disagree_icon {
+  background: url('@{imgpath}/disagree_icon.png') no-repeat;
+}
+//等待的图标样式
+.waitting_icon {
+  background: url('@{imgpath}/waitting_icon.png') no-repeat;
+}
+//审批完成
+.finish_icon {
+  background: url('@{imgpath}/finish_icon.png') no-repeat;
+}
+.i-block {
+  display: inline-block;
+  margin-top: 11px;
+}
+.ft-gray {
+  color: #999;
+}
+.ft-orange {
+  color: #FF851A
+}
+.ft-red {
+  color: @red1;
+}
+.show-ellipsis{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap; 
+}
+.btn-rejected {
+  background-color: @red1;
+  margin-left: 20px;
+}
+.icon-size {
+  height: 16px;
+  width: 16px;
+}

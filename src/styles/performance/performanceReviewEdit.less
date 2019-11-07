@@ -1,0 +1,29 @@
+@import 'myPerformanceEdit.less';
+
+.main {
+    margin: 0;
+}
+
+.main-body {
+    padding: 0;
+    background-color: transparent;
+}
+
+.content-wrapper {
+    padding: 24px;
+    margin: 16px 20px;
+    background: #fff;
+    .ant-steps-dot .ant-steps-item-content {
+        width: 120px;
+    }
+}
+
+.superior_weight {
+    position: relative;
+    &:after {
+        content: '%';
+        position: absolute;
+        top: 32%;
+        right: 14px;
+    }
+}

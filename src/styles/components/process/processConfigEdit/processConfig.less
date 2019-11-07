@@ -1,0 +1,237 @@
+  .process-config-wrapper {
+    display: flex;
+    height: 100%;
+    padding: 0 13px;
+  }
+
+  .process-step-wrapper {
+    width: 492px;
+    padding: 20px 20px 60px;
+    background: #fff;
+  }
+
+  .step-config-wrapper {
+    flex: 1;
+    margin-left: 18px;
+  }
+
+  .process-operate-wrapper {
+      position: fixed;
+      left: 211px;
+      bottom: 0;
+      width: 494px;
+      height: 65px;
+      line-height: 65px;
+      text-align: center;
+      background: #fff;
+      a {
+          margin-right: 25px;
+      }
+  }
+
+  .step-config-content {
+    width: 100%;
+    height: 100%;
+    padding: 25px 7px;
+    background: #fff;
+  }
+
+  .process-line-card {
+    position: relative;
+    margin-bottom: 17px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fff;
+    border-radius: 3px;
+
+    .remove-icon {
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        z-index: 99;
+        width:16px;
+        height:16px;
+        background:#FF5858;
+        border-radius:50%;
+        &:after {
+            content: ' ';
+            position: absolute;
+            left: 3px;
+            top: 7px;
+            z-index: 999;
+            width: 10px;
+            height: 2px;
+            background: #fff;
+        }
+        &:active {
+            opacity: .8;
+        }
+    }
+  }
+
+  .selected-process-card {
+    border-color: #1890FF;
+  }
+
+  .process-card-wrapper {
+    position: relative;
+    display: flex;
+    width: 451px;
+    height: 56px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.16);
+  }
+
+  .process-card-wrapper:hover {
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .last-process-card {
+    .normal-process-line {
+        display: none;
+    }
+    .condition-process-bottom-line {
+        display: none;
+    }
+  }
+
+  .condition-process-top-line {
+    position: absolute;
+    top: 0;
+    left: -21px;
+    width: 20px;
+    height: 28px;
+    border-left: 2px dotted #BFBFBF;
+    border-bottom: 2px dotted #BFBFBF;
+  }
+
+  .condition-process-bottom-line {
+    position: absolute;
+    top: 29px;
+    left: -21px;
+    width: 20px;
+    height: 48px;
+    border-left: 2px dotted #BFBFBF;
+  }
+
+  .normal-process-line {
+    position: absolute;
+    bottom: -17px;
+    left: 13px;
+    display: block;
+    height: 15px;
+    border-left: 2px dotted #BFBFBF;
+  }
+
+  .process-card-belong {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 100%;
+  }
+
+  .launch-belong {
+    background:rgba(207,232,255,1);
+    color:rgba(24,144,255,1);
+  }
+
+  .approval-belong {
+    background:rgba(255,180,67,1);
+    color: #fff;
+  }
+
+  .send-copy-belong {
+    background:rgba(24,144,255,1);
+    color: #fff;
+  }
+
+  .process-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+    height: 100%;
+    padding: 5px 9px 7px;
+  }
+
+  .process-card-tit {
+    font-weight: bold;
+    color: rgba(51,51,51,1);
+  }
+
+  .condition-title {
+      display: inline-block;
+      width: 325px;
+  }
+
+  .process-card-message {
+    width: 380px;
+    color: rgba(153,153,153,1);
+  }
+
+  .condition-card-wrapper {
+    float: right;
+    width: 417px;
+  }
+
+  .condition-belong {
+    background:rgba(85,185,105,1);
+    color: #fff;
+  }
+
+  .process-card-priority {
+    float: right;
+    font-weight: normal;
+    color:rgba(153,153,153,1);
+  }
+
+  .condition-process {
+    display: inline-block;
+    padding: 0 5px;
+    margin-left: -5px;
+    text-align: center;
+    line-height: 21px;
+    background:rgba(255,255,255,1);
+    border: 1px solid rgba(206,206,206,1);
+    border-radius:3px;
+    font-size: 12px;
+    transform: scale(.8);
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .process-condition-operate {
+      width: 100%;
+      padding-left: 20px;
+      padding-bottom: 20px;
+      a {
+          margin-right: 25px;
+      }
+  }
+
+  .condition-form-item {
+      .ant-form-item-label {
+          padding-right: 10px;
+          padding-left: 14px;
+          line-height: 40px;
+          white-space: normal;
+      }
+
+      .ant-checkbox-wrapper {
+          line-height: 40px;
+          word-break: break-all;
+      }
+
+      .ant-form-item-label > label {
+        display: inline-block;
+      }
+
+      .ant-form-item-label > label:after {
+        margin: 0;
+      }
+  }
+

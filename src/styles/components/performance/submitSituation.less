@@ -1,0 +1,66 @@
+.submit-situation-wrapper {
+    .left-content {
+        height: 400px;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            width: 6px;
+            height: 1px;
+        }
+        &::-webkit-scrollbar-thumb {
+            height: 50px;
+            border-radius: 10px;
+            background: #bcbcbc;
+        }
+        &::-webkit-scrollbar-track {
+            border-radius: 10px;
+            background: #f5f5f5;
+        }
+        .panel {
+            padding-top: 0;
+            border: 0;
+            background-color: #fff;
+        }
+        .panel-title {
+            color: #999;
+        }
+        .panel-content {
+            cursor: pointer;
+            color: #333;
+            padding-left: 28px;
+            .content-item {
+                padding-left: 5px;
+                padding-right: 5px;
+                margin-top: 5px;
+            }
+            .content-item:hover {
+                background: rgba(153, 153, 153, 0.08);
+                border-radius: 3px;
+            }
+        }
+    }
+    .right-content {
+        height: 400px;
+        overflow-y: scroll;
+        .panel-content {
+            padding-left: 15px;
+            color: #333;
+            &:hover {
+                background: rgba(153, 153, 153, 0.08);
+                border-radius: 3px;
+            }
+        }
+        &::-webkit-scrollbar {
+            width: 6px;
+            height: 1px;
+        }
+        &::-webkit-scrollbar-thumb {
+            height: 50px;
+            border-radius: 10px;
+            background: #bcbcbc;
+        }
+        &::-webkit-scrollbar-track {
+            border-radius: 10px;
+            background: #fff;
+        }
+    }
+}

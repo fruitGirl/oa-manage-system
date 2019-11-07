@@ -1,0 +1,66 @@
+.approval-item-wrapper {
+    width: 100%;
+    height: 90px;
+    padding: 14px 19px 14px 0;
+    margin-bottom: 15px;
+    border:1px solid #E9E9E9;
+    &:hover {
+        box-shadow: 1px 1px 1px rgba(233, 233, 233, 0.44);
+    }
+    .logo {
+        width: 60px;
+        height: 60px;
+        margin-right: 12px;
+    }
+    .content {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 100%;
+        color: #999;
+        font-size: 12px;
+        .process-info {
+            display: flex;
+            align-items: center;
+        }
+        .process-name {
+            display: inline-block;
+            max-width: 120px;
+            padding-right: 15px;
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+        }
+        .process-desc {
+            display: inline-block;
+            max-width: 158px;
+        }
+    }
+    .drag-wrapper {
+        width: 24px;
+        height: 100%;
+        line-height: 58px;
+        vertical-align: middle;
+    }
+    .drag-icon {
+        width: 100%;
+        height: 24px;
+        margin-right: 2px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    .operate {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        a {
+            margin-right: 5px;
+        }
+    }
+    .disabled-status {
+        color: #FF7D7D;
+        &:hover {
+            opacity: .75;
+        }
+    }
+}

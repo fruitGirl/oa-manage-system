@@ -1,0 +1,72 @@
+.box_default_background_color {
+    padding-top: 12px;
+    margin-bottom: 15px;
+    .ant-col-2 {
+        width: 100px;
+    }
+    .ant-form-item-label {
+        label {
+            margin-right: 10px;
+        }
+    }
+}
+.ant-form-item-no-colon {
+    label {
+        &::after {
+            content: ' ';
+        }
+    }
+}
+.foot-group-btn {
+    margin: 20px 0;
+    .ant-btn {
+        margin-right: 15px;
+    }
+}
+.ant-form-item-required:before {
+    content: ' ';
+}
+.text-tip-percent {
+    position: absolute;
+    top: 10px;
+    left: 280px;
+    font-size: 12px;
+    color: #999;
+}
+.performance-time {
+    padding: 0 18px 20px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    .time {
+        display: inline-block;
+        min-width: 220px;
+    }
+}
+.weight-percent {
+    position: relative;
+    &:after {
+        content: '%';
+        position: absolute;
+        right: -24px;
+        top: -1px;
+        font-size: 17px;
+    }
+}
+
+.main {
+    margin: 0;
+}
+
+.main-body {
+    padding: 0;
+    background-color: transparent;
+}
+
+.content-wrapper {
+    padding: 24px;
+    margin: 16px 20px;
+    background: #fff;
+    .ant-steps-dot .ant-steps-item-content {
+        width: 120px;
+    }
+}

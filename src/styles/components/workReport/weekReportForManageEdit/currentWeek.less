@@ -1,0 +1,15 @@
+.current-week-title {
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+    &:after {
+        content: '';
+        position: absolute;
+        left: -7px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 2px;
+        height: 13px;
+        background: #1890ff;
+    }
+}

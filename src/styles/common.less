@@ -1,0 +1,282 @@
+@import '~antd/lib/style/index.less';
+@import '~antd/lib/grid/style/index.less';
+@import '~antd/lib/button/style/index.less';
+@import '~antd/lib/input/style/index.less';
+@import '~antd/lib/input-number/style/index.less';
+@import '~antd/lib/modal/style/index.less';
+@import '~antd/lib/pagination/style/index.less';
+@import '~antd/lib/date-picker/style/index.less';
+@import '~antd/lib/dropdown/style/index.less';
+@import '~antd/lib/tooltip/style/index.less';
+@import '~antd/lib/select/style/index.less';
+@import '~antd/lib/message/style/index.less';
+@import '~antd/lib/form/style/index.less';
+@import '~antd/lib/checkbox/style/index.less';
+@import '~antd/lib/radio/style/index.less';
+@import '~antd/lib/tabs/style/index.less';
+@import '~antd/lib/avatar/style/index.less';
+@import '~antd/lib/affix/style/index.less';
+@import '~antd/lib/notification/style/index.less';
+@import '~antd/lib/popover/style/index.less';
+@import '~antd/lib/menu/style/index.less';
+@import '~antd/lib/spin/style/index.less';
+@import '~antd/lib/table/style/index.less';
+@import '~antd/lib/progress/style/index.less';
+@import '~antd/lib/steps/style/index.less';
+@import '~antd/lib/layout/style/index.less';
+@import '~antd/lib/tree-select/style/index.less';
+@import '~antd/lib/tree/style/index.less';
+@import '~antd/lib/upload/style/index.less';
+@import '~antd/lib/collapse/style/index.less';
+@import '~antd/lib/badge/style/index.less';
+@import '~antd/lib/card/style/index.less';
+@import '~antd/lib/drawer/style/index.less';
+@import '~antd/lib/transfer/style/index.less';
+@import '~antd/lib/cascader/style/index.less';
+@import '~antd/lib/empty/style/index.less';
+// @import '~antd/lib/breadcrumb/style/index.less';
+@import 'customTheme.less'; // 覆盖antd的样式
+@import 'config.less';
+@import 'layout.less'; //跟布局有关的样式
+
+@import 'config.less';
+@import 'form.less';
+@import 'btn.less';
+@import 'table.less';
+@import 'modal.less';
+@import 'myNavAndBackbtn.less';
+@import 'basicLayout.less';
+
+ul,
+li,
+ol,
+dl,
+dd,
+dt {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+:global(#root) {
+    height: 100%;
+    color: @defaultColor;
+    min-width: 1100px;
+    overflow-x: auto;
+    font-family:"Microsoft YaHei","微软雅黑";
+}
+body {
+    background: #e6e6e6;
+    overflow-x: hidden;
+    font-size: 12px;
+}
+label .ant-form-item .ant-input {
+    font-size: 13px !important;
+}
+
+.text-gray9 {
+    color: #999;
+}
+.text-primary {
+    color: @text-primary;
+}
+.text-center {
+    text-align: center;
+}
+.mr32 {
+    margin-right: 32px;
+}
+.mr10 {
+    margin-right: 10px;
+}
+.mb10 {
+    margin-bottom: 10px;
+}
+.mt10 {
+    margin-top: 10px;
+}
+.pull_left {
+    float: left;
+}
+.pull_right {
+    float: right;
+}
+
+.box_default_background_color {
+    background-color: @defaultBackgroundColor;
+}
+// 用户选择
+@usernmaeIcon: '@{imgpath}/user-name-icon.png';
+.user_name {
+    width: 20px;
+    height: 20px;
+    background: url(@usernmaeIcon) no-repeat 0 0;
+}
+// 灰色背景里面的form元素
+.form_ul_item {
+    padding: 10px 0 0 20px;
+    li {
+        list-style: none;
+        float: left;
+        margin-right: 55px;
+    }
+    .ant-form-item-label,
+    .ant-form-item-control-wrapper {
+        float: left;
+    }
+    .ant-form-item-label {
+        label {
+            display: inline-block;
+            width: 75px;
+            margin-right: 0;
+            text-align: left;
+        }
+    }
+    .ant-form-item-control,
+    .ant-input {
+        width: 200px;
+    }
+    .ant-form-item {
+        margin-bottom: 12px !important;
+    }
+}
+.add_btn_wrapper {
+    line-height: 28px;
+    margin-left: 5px;
+}
+
+.hide {
+    display: none;
+}
+.i_block {
+    display: inline-block;
+}
+.v_middle {
+    vertical-align: middle;
+}
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+.clearfix {
+    &:before,
+    &:after {
+        content: ' ';
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.total-money {
+    color: @text-primary;
+    font-size: 24px;
+}
+
+.ant-table-pagination {
+    margin: 16px 56px 10px 0;
+}
+//特殊字符不能使用的样式
+.marked_words {
+    margin-left: 94px;
+    color: #ff3232;
+}
+.tab-wrap {
+    // position: fixed;
+    // top: 56px;
+    // right: 0;
+    // left: 180px;
+    height: 48px;
+    border-bottom: 1px solid #d8d8d8;
+    background-color: #f5f5f5;
+    z-index: 6;
+}
+//附件的底色
+.ant-upload-list-item-info {
+    background-color: #d9e1ed;
+}
+//下拉框鼠标移上去的字体颜色变化
+.ant-select-dropdown-menu-item:hover {
+    color: #108ee9;
+}
+.anticon-plus {
+    font-weight: bold;
+}
+
+.ant-table-pagination.ant-pagination {
+    margin-right: 20px;
+}
+.oa-btn {
+    width: 92px;
+    margin-right: 24px;
+}
+.ant-btn > .anticon + span,
+.ant-btn > span + .anticon {
+    margin-left: 0;
+}
+.scrollbar {
+    &::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+        background-color: #fff;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #ccc;
+    }
+    &::-webkit-scrollbar-track {
+        // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        background-color: #fff;
+    }
+}
+
+.scrollbar-modal {
+    max-height: 450px;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+        width: 7px;
+        height: 7px;
+        background-color: #fff;
+    }
+    &::-webkit-scrollbar-thumb {
+        height: 30px;
+        border-radius: 10px;
+        // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #ccc;
+    }
+    &::-webkit-scrollbar-track {
+        // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        background-color: #fff;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .scrollbar-modal {
+        max-height: 250px;
+    }
+}
+
+.process-title {
+    padding-left: 8px;
+    border-left: 2px solid #108ee9;
+    margin: 0 0 20px 25px;
+    line-height: 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.table-wrapper {
+    margin-top: 15px;
+}
